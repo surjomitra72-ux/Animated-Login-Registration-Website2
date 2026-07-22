@@ -1,0 +1,190 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .bodyy {
+     background: #0f0f16;
+     font-family: "poppins", sans-serif;
+     display: flex;
+     justify-content: center;
+     padding-top: 40px;
+ }
+
+ .navbar {
+     width: 90%;
+     max-width: 1200px;
+     margin: 20px auto;
+     padding: 15px 35px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: #1b1b22;
+     border-radius: 10px;
+ }
+
+
+
+ .logo img {
+     width: 45px;
+     height: 45px;
+     transition: 0.3s;
+     cursor: pointer;
+ }
+
+ .logo img:hover {
+     transform: scale(1.2);
+ }
+
+
+ .nav-link {
+     display: flex;
+     gap: 30px;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .nav-link a::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0%;
+     height: 2px;
+     background: #4c86f9;
+     transition: width 0.3s ease-in-out;
+
+ }
+
+ .nav-link a {
+     color: white;
+     text-decoration: none;
+     display: inline-block;
+     transition: 0.3s ease, color 0;
+ }
+
+ .nav-link a:hover {
+     color: #4c86f9;
+     transform: translateY(-4px);
+     text-shadow: 0 0 10px rgba(76, 134, 249, 0.6);
+ }
+
+ .nav-link a:hover::after {
+     width: 100%;
+ }
+
+ .cbtn {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     padding: 10px 18px;
+     background: white;
+     color: rgb(22, 21, 21);
+     border: 1px solid #1b1818;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 16px;
+
+     /* Animation Setup */
+     position: relative;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ /* Bottom Line (Underline) Setup */
+ .cbtn::after {
+     content: '';
+     position: absolute;
+     bottom: 5px;
+     left: 50%;
+     width: 0%;
+     height: 2px;
+     background: #4c86f9;
+     transition: width 0.3s ease, left 0.3s ease;
+ }
+
+
+ .cbtn:hover {
+     background: #0f0f16;
+     color: #ffff;
+     transform: translateY(-3px);
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ .cbtn:hover::after {
+     width: 60%;
+     left: 20%;
+ }
+
+ /* Button Active*/
+ .cbtn:active {
+     transform: translateY(-1px);
+ }
+
+ .cbtn img {
+     width: 18px;
+     height: 18px;
+ }
+
+ .cbtn:hover img {
+     filter: invert(1);
+     transition: filter 0.3s ease;
+ }
+
+ section {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #141414;
+ }
+
+ .loading {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100px;
+     height: 100px;
+     gap: 6px;
+ }
+
+ .loading span {
+     width: 4px;
+     height: 52px;
+     background: #4c86f9;
+     animation: scalo 0.9s ease-in-out infinite;
+ }
+
+ .loading span:nth-child(2) {
+     background: #49a840;
+     animation-delay: -0.8s;
+ }
+
+ .loading span:nth-child(3) {
+     background: #d2e00c;
+     animation-delay: -0.7s;
+ }
+
+ .loading span:nth-child(4) {
+     background: #961853;
+     animation-delay: -0.6s;
+ }
+
+ .loading span:nth-child(5) {
+     background: #49a840;
+     animation-delay: -0.5s;
+ }
+
+ @keyframes scalo {
+
+     0%,
+     40%,
+     100% {
+         transform: scaleY(0.05);
+     }
+
+     20% {
+         transform: scaleY(1);
+     }
+ }
