@@ -1,120 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated login</title>
-   <style> * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f4f4f4;
-}
-
-.container {
-    width: 850px;
-    height: 500px;
-    background: #f4f4f4;
-    display: flex;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px rgba(0,0,0,.2);
-}
-
-.lefl {
-    width: 40;
-    background: linear-gradient(#ff4b2b,#ff416c);
-    color: #fff;
-      display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-}
-
-.left h1{
-    margin-bottom:20px;
-}
-
-.left p{
-    margin-bottom:30px;
-    line-height:25px;
-}
-
-.left button{
-    padding:12px 35px;
-    border:2px solid #fff;
-    background:transparent;
-    color:#fff;
-    border-radius:30px;
-    cursor:pointer;
-}
-
-.right{
-    width:60%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.right h1{
-    margin-bottom:30px;
-}
-
-.right input{
-    width:320px;
-    padding:12px;
-    margin:10px;
-    border:1px solid #ddd;
-    outline:none;
-    background:#f5f5f5;
-}
-
-.right button{
-    margin-top:20px;
-    padding:12px 45px;
-    background:#ff416c;
-    color:#fff;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-}
-
-.right button:hover{
-    background:#ff4b2b;
-}</style>
+    <title>animated</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-    <class="container">
-
-        <div class="left">
-            <h1>Welcome Back!</h1>
-            <p>To keep connected with us please login with your personal info</p>
-
-            <button>SING IN</button>
+    <nav class="bodyy">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./icon/pngwing.com.png" alt="">
+            </div>
+            <ul class="nav-link">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">projects</a></li>
+            </ul>
+            <button class="cbtn">
+                <img src="./icon/icons8-message-50.png" alt="">
+                Hire me
+            </button>
+        </nav>
+    </nav>
+    <section>
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="right">
-            <h1>Create Account</h1>
 
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="password">
-            <button>SINH IN</button>
-        </div>
-
-
-    </div>
 </body>
+
+
+</section>
+
 </html>
